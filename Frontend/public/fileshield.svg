@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Shield -->
+  <path d="M32 2 L58 12 V32 C58 50 44 60 32 62 C20 60 6 50 6 32 V12 Z" fill="#0077cc" stroke="#005fa3" stroke-width="2"></path>
+  <!-- File Icon -->
+  <rect x="22" y="16" width="20" height="28" rx="2" ry="2" fill="white" stroke="#333" stroke-width="2"></rect>
+  <polyline points="22,16 34,16 42,24 42,44 22,44 22,16" fill="none" stroke="#333" stroke-width="2"></polyline>
+  <!-- File Fold -->
+  <polygon points="34,16 42,24 34,24" fill="#cccccc"></polygon>
+</svg>

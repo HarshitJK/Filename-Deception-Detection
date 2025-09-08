@@ -1,0 +1,341 @@
+{"filename":"report.pdf.exe","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"invoice.doc.scr","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"budget.xlsx.vbs","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"resume.pdf.bat","technique":"Double extension","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"contract.doc.pif","technique":"Double extension","category":"Social Engineering","detected_by":"File signature"}
+{"filename":"image.jpg.com","technique":"Double extension","category":"Malware Delivery","detected_by":"AV heuristic"}
+{"filename":"file.txt.lnk","technique":"Double extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"doc.pdf‮exe","technique":"Right-to-left override","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"safe.docＥＸＥ","technique":"Unicode homoglyph","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"report .exe","technique":"Whitespace padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"update.iso","technique":"Mimic legitimate extension","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"setup.msi.exe","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"readme.txt.js","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"photo.png.ps1","technique":"Double extension","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"docx.pdf‮xex","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"safe_file.ＳＣＲ","technique":"Unicode homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"file.pdf   .exe","technique":"Whitespace padding","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"system.dll","technique":"Mimic system file","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"notes.txt.hta","technique":"Double extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"backup.zip.exe","technique":"Double extension","category":"Malware Delivery","detected_by":"AV heuristic"}
+{"filename":"report.pdf.b64","technique":"Base64 encoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"script.js.enc","technique":"Custom encoding","category":"Evasion","detected_by":"Sandbox analysis"}
+{"filename":"data.csv.vbe","technique":"Double extension","category":"Social Engineering","detected_by":"File signature"}
+{"filename":"file.exe.pdf","technique":"Reverse double extension","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"safe.doc‮epj","technique":"Right-to-left override","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"update.ＪＡＲ","technique":"Unicode homoglyph","category":"Malware Delivery","detected_by":"Unicode inspection"}
+{"filename":"doc .pdf.exe","technique":"Whitespace padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"win32.sys","technique":"Mimic system file","category":"Evasion","detected_by":"File signature"}
+{"filename":"plan.docx.cmd","technique":"Double extension","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"image.gif.exe","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"payload.bin","technique":"Generic extension","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"test.pdf.uue","technique":"UUencoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"file.txt‮xex","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"secure.ＰＹ","technique":"Unicode homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"report..exe","technique":"Dot padding","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"config.ini.exe","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"log.txt.wsf","technique":"Double extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"file.pdf.hex","technique":"Hex encoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"script.vbs‮exe","technique":"Right-to-left override","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"app.ＡＰＫ","technique":"Unicode homoglyph","category":"Malware Delivery","detected_by":"Unicode inspection"}
+{"filename":"data .doc.exe","technique":"Whitespace padding","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"svchost.exe","technique":"Mimic system process","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"memo.docx.msi","technique":"Double extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"file.jpg.lnk","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"encoded.exe.b64","technique":"Base64 encoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"test.pdf‮tab","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"file.ＣＯＭ","technique":"Unicode homoglyph","category":"Malware Delivery","detected_by":"Unicode inspection"}
+{"filename":"report...pdf.exe","technique":"Dot padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"setup.cab.exe","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"notes.md.jse","technique":"Double extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"document.pdf:malware.exe","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"photo.jpg.ico.exe","technique":"Icon spoofing","category":"Social Engineering","detected_by":"File signature"}
+{"filename":"invoice.doc.exe.scr","technique":"Triple extension","category":"Malware Delivery","detected_by":"AV heuristic"}
+{"filename":"%TEMP%\\update.exe","technique":"Environment variable path","category":"Persistence","detected_by":"Behavioral analysis"}
+{"filename":"readme.txt.gz.exe","technique":"Compressed file mimicry","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"script.ps1.obf","technique":"Script obfuscation","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"setup.msc","technique":"Control panel extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"notes.pdf.cpl","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"safe.docⓔⓧⓔ","technique":"Unicode circled letters","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"file.pdf.....exe","technique":"Multiple dot padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"kernel32.dll.exe","technique":"Mimic system DLL","category":"Persistence","detected_by":"File signature"}
+{"filename":"report.docx:payload.vbs","technique":"Alternate data stream","category":"Malware Delivery","detected_by":"ADS inspection"}
+{"filename":"image.png.rar.exe","technique":"Compressed file mimicry","category":"Evasion","detected_by":"Sandbox analysis"}
+{"filename":"config.ini.ps2","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"update.exe‮fdp","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"file.𝔼𝕏𝔼","technique":"Unicode gothic letters","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"system.exe.lnk","technique":"Shortcut masquerade","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"data.csv:malware.exe","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"doc.pdf.tar.gz.exe","technique":"Nested compression mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"safe.vbs.enc","technique":"Encoded script","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"budget.xlsx.msh","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"file.doc    .exe","technique":"Trailing whitespace","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"explorer.exe.scr","technique":"Mimic system process","category":"Persistence","detected_by":"File signature"}
+{"filename":"resume.pdf:backdoor.bat","technique":"Alternate data stream","category":"Malware Delivery","detected_by":"ADS inspection"}
+{"filename":"file.exe.jpg","technique":"Reverse extension trick","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"script.js‮exe","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"safe.𝐄𝐗𝐄","technique":"Unicode bold letters","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"log.txt.7z.exe","technique":"Compressed file mimicry","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"settings.reg.exe","technique":"Double extension","category":"Persistence","detected_by":"AV heuristic"}
+{"filename":"file.pdf:trojan.ps1","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"update.cab.scr","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"doc.docx.uu","technique":"UUencoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"safe_file.🅴🅇🄴","technique":"Unicode square letters","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"file...doc.exe","technique":"Dot padding","category":"Evasion","detected_by":"AV heuristic"}
+{"filename":"svchost.exe:malware.dll","technique":"Alternate data stream","category":"Persistence","detected_by":"ADS inspection"}
+{"filename":"photo.gif.cpl","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"payload.exe.xz","technique":"Compressed file mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"script.bat.obf","technique":"Script obfuscation","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"file.pdf‮tab.scr","technique":"Right-to-left override","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"safe.𝗘𝗫𝗘","technique":"Unicode serif bold","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"data.xlsx:payload.exe","technique":"Alternate data stream","category":"Malware Delivery","detected_by":"ADS inspection"}
+{"filename":"install.msi.scr","technique":"Double extension","category":"Social Engineering","detected_by":"File signature"}
+{"filename":"file.txt.hex.exe","technique":"Hex encoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"system.ini.lnk","technique":"Shortcut masquerade","category":"Persistence","detected_by":"Sandbox analysis"}
+{"filename":"report.pdf....exe","technique":"Multiple dot padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"winlogon.exe.vbs","technique":"Mimic system process","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"file.doc:malware.js","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"image.jpg.zip.exe","technique":"Compressed file mimicry","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"safe_file.𝙴𝚇𝙴","technique":"Unicode monospace","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"file.exe‮fdp.txt","technique":"Right-to-left override","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"config.xml.ws","technique":"Double extension","category":"Malware Delivery","detected_by":"AV heuristic"}
+{"filename":"doc.pdf:trojan.vbe","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"setup.exe.b64","technique":"Base64 encoding","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"file....txt.exe","technique":"Dot padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"taskmgr.exe.hta","technique":"Mimic system process","category":"Persistence","detected_by":"File signature"}
+{"filename":"data.csv.tar.exe","technique":"Compressed file mimicry","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"script.ps1‮exe","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"safe.ＥＸＥ","technique":"Unicode full-width","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"file.doc:payload.scr","technique":"Alternate data stream","category":"Malware Delivery","detected_by":"ADS inspection"}
+{"filename":"update.msc.exe","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"payload.bin.enc","technique":"Custom encoding","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"file.txt....exe","technique":"Multiple dot padding","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"rundll32.exe.lnk","technique":"Shortcut masquerade","category":"Persistence","detected_by":"Sandbox analysis"}
+{"filename":"image.png:malware.exe","technique":"Alternate data stream","category":"Evasion","detected_by":"ADS inspection"}
+{"filename":"doc.docx.b64.exe","technique":"Base64 encoding","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"safe_file.ᴇxᴇ","technique":"Unicode small letters","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"file.exe‮xet.pdf","technique":"Right-to-left override","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"config.yaml.pif","technique":"Double extension","category":"Social Engineering","detected_by":"AV heuristic"}
+{"filename":"system.dll:trojan.exe","technique":"Alternate data stream","category":"Persistence","detected_by":"ADS inspection"}
+{"filename":"setup.iso.exe","technique":"Double extension","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"image.png:stego.exe","technique":"Steganography in ADS","category":"Evasion","detected_by":"Steganalysis"}
+{"filename":"doc.pdf..[U+200B]..exe","technique":"Invisible Unicode separator","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"update.wasm.exe","technique":"WebAssembly mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"file.docx:$DATA:malware.vbs","technique":"NTFS attribute manipulation","category":"Persistence","detected_by":"ADS inspection"}
+{"filename":"safe.🅴🆇🅴","technique":"Unicode emoji homoglyph","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"report.pdf.quic","technique":"QUIC protocol extension","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"config.yaml:poly.exe","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"system.dev/zero.exe","technique":"Linux device file mimicry","category":"Persistence","detected_by":"File signature"}
+{"filename":"invoice.docx.appx","technique":"Windows AppX spoofing","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"file.txt[U+2063].exe","technique":"Invisible Unicode joiner","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"payload.qr.enc","technique":"QR code encoding","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"setup.msi:trojan.dll","technique":"Alternate data stream","category":"Persistence","detected_by":"ADS inspection"}
+{"filename":"safe_file.𝙴𝚇𝙴","technique":"Unicode monospace homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.pdf...[U+200E]...exe","technique":"Unicode left-to-right mark","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"update.ipfs.exe","technique":"IPFS file mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"file.docx:quantum.b64","technique":"Quantum-resistant encoding","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"kernel.sys:malware.exe","technique":"NTFS reserved name","category":"Persistence","detected_by":"File signature"}
+{"filename":"photo.jpg.wsf.lnk","technique":"Nested shortcut extension","category":"Social Engineering","detected_by":"Sandbox analysis"}
+{"filename":"data.csv😈.exe","technique":"Emoji-based extension","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"report.pdf:stego.ps1","technique":"Steganography in ADS","category":"Malware Delivery","detected_by":"Steganalysis"}
+{"filename":"file.txt[U+FEFF].exe","technique":"Unicode BOM marker","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"install.snap.exe","technique":"Linux snap package mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"config.ini:poly.vbs","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"safe.𝐄𝐗𝐄","technique":"Unicode bold serif homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.docx.webm.exe","technique":"Web media mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"file.pdf:ml.exe","technique":"ML model embedding","category":"Evasion","detected_by":"Memory forensics"}
+{"filename":"update.torrent.exe","technique":"Torrent file mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"system.con:payload.exe","technique":"NTFS reserved name","category":"Persistence","detected_by":"File signature"}
+{"filename":"image.gif[U+200D].scr","technique":"Unicode zero-width joiner","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"setup.flatpak.exe","technique":"Linux flatpak mimicry","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"file.docx:obf.js","technique":"Script obfuscation in ADS","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"safe_file.🅴🆇🅴","technique":"Unicode square emoji homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"report.pdf.arweave","technique":"Arweave blockchain mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"data.xlsx:poly.bat","technique":"Polymorphic extension cycling","category":"Persistence","detected_by":"Behavioral analysis"}
+{"filename":"file.txt....[U+202F]....exe","technique":"Unicode narrow no-break space","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"install.appimage.exe","technique":"Linux AppImage mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"config.yaml:stego.exe","technique":"Steganography in ADS","category":"Evasion","detected_by":"Steganalysis"}
+{"filename":"safe.𝙴𝚇𝙴","technique":"Unicode monospace bold homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.pdf.hls.exe","technique":"HLS streaming mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"file.exe:ml.model","technique":"ML model embedding in ADS","category":"Evasion","detected_by":"Memory forensics"}
+{"filename":"update.dweb.exe","technique":"Decentralized web mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"system.aux:trojan.exe","technique":"NTFS reserved name","category":"Persistence","detected_by":"File signature"}
+{"filename":"photo.png[U+2060].vbs","technique":"Unicode word joiner","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"setup.uwp.exe","technique":"Windows UWP app spoofing","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"file.docx:qr.ps1","technique":"QR code encoding in ADS","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"safe_file.𝐄𝐗𝐄","technique":"Unicode italic homoglyph","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"report.pdf.dash.exe","technique":"DASH streaming mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"data.csv:poly.scr","technique":"Polymorphic extension cycling","category":"Persistence","detected_by":"Behavioral analysis"}
+{"filename":"file.txt[U+200C].exe","technique":"Unicode zero-width non-joiner","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"install.container.exe","technique":"Container image mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"config.ini:stego.vbe","technique":"Steganography in ADS","category":"Evasion","detected_by":"Steganalysis"}
+{"filename":"safe.🅴🆇🅴","technique":"Unicode circled emoji homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.pdf.ipns.exe","technique":"IPNS file mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"file.exe:quantum.enc","technique":"Quantum-resistant encoding in ADS","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"system.lpt1:malware.exe","technique":"NTFS reserved name","category":"Persistence","detected_by":"File signature"}
+{"filename":"image.jpg[U+2064].hta","technique":"Unicode invisible plus","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"setup.msix.exe","technique":"Windows MSIX app spoofing","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"file.docx:obf.ps2","technique":"Script obfuscation in ADS","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"safe_file.𝙴𝚇𝙴","technique":"Unicode serif monospace homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"report.pdf.web3.exe","technique":"Web3 storage mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"data.xlsx:poly.msh","technique":"Polymorphic extension cycling","category":"Persistence","detected_by":"Behavioral analysis"}
+{"filename":"file.txt....[U+205F]....exe","technique":"Unicode medium mathematical space","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"install.oci.exe","technique":"OCI container mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"config.yaml:qr.exe","technique":"QR code encoding in ADS","category":"Evasion","detected_by":"Content analysis"}
+{"filename":"safe.𝐄𝐗𝐄","technique":"Unicode bold italic homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.pdf.m3u8.exe","technique":"M3U8 playlist mimicry","category":"Malware Delivery","detected_by":"Content analysis"}
+{"filename":"file.exe:stego.dll","technique":"Steganography in ADS","category":"Persistence","detected_by":"Steganalysis"}
+{"filename":"system.nul:trojan.exe","technique":"NTFS reserved name","category":"Evasion","detected_by":"File signature"}
+{"filename":"photo.png[U+2061].vbs","technique":"Unicode function application","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"setup.pod.exe","technique":"Podman container mimicry","category":"Malware Delivery","detected_by":"Sandbox analysis"}
+{"filename":"file.docx:poly.js","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"safe_file.🅴🆇🅴","technique":"Unicode boxed emoji homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"report.pdf.sia.exe","technique":"Sia blockchain mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"data.csv:obf.vbs","technique":"Script obfuscation in ADS","category":"Evasion","detected_by":"Entropy analysis"}
+{"filename":"file.txt[U+2062].exe","technique":"Unicode invisible times","category":"Evasion","detected_by":"Unicode inspection"}
+{"filename":"install.k8s.exe","technique":"Kubernetes manifest mimicry","category":"Malware Delivery","detected_by":"File signature"}
+{"filename":"config.ini:ml.exe","technique":"ML model embedding in ADS","category":"Persistence","detected_by":"Memory forensics"}
+{"filename":"safe.𝙴𝚇𝙴","technique":"Unicode sans-serif homoglyph","category":"Social Engineering","detected_by":"Unicode inspection"}
+{"filename":"doc.pdf.storj.exe","technique":"Storj storage mimicry","category":"Data Exfiltration","detected_by":"Network analysis"}
+{"filename":"file.exe:poly.bat","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"invoice.pdf.exe","technique":"Double extension disguise","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"report.docx.scr","technique":"Script disguised as document","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"update.jpg.pif","technique":"Image file with executable extension","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"setup.tar.gz.exe","technique":"Compressed archive with executable suffix","category":"Evasion","detected_by":"Sandboxing"}
+{"filename":"readme.txt.{9006}","technique":"Alternate data stream hiding","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"backup.zip.exe","technique":"Archive with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"photo.png.exe","technique":"Image file masquerading","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"document.pdf.{hidden}","technique":"Hidden file extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"install.exe:Zone.Identifier","technique":"Zone identifier ADS to bypass security","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"script.js.exe","technique":"JavaScript file disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"invoice.pdf.exe","technique":"Double extension disguise","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"report.docx.scr","technique":"Script disguised as document","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"update.jpg.pif","technique":"Image file with executable extension","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"setup.tar.gz.exe","technique":"Compressed archive with executable suffix","category":"Evasion","detected_by":"Sandboxing"}
+{"filename":"readme.txt.{9006}","technique":"Alternate data stream hiding","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"backup.zip.exe","technique":"Archive with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"photo.png.exe","technique":"Image file masquerading","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"document.pdf.{hidden}","technique":"Hidden file extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"install.exe:Zone.Identifier","technique":"Zone identifier ADS to bypass security","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"script.js.exe","technique":"JavaScript file disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"archive.rar.{0000}","technique":"Alternate data stream with null byte","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"music.mp3.exe","technique":"Audio file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"video.mp4.scr","technique":"Video file disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"presentation.pptx.bat","technique":"Batch script disguised as presentation","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"document.docx.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"installer.msi.exe","technique":"Installer file with executable suffix","category":"Evasion","detected_by":"Sandboxing"}
+{"filename":"photo.jpg:evil.txt","technique":"Alternate data stream with malicious payload","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"readme.txt.exe","technique":"Text file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"config.json.scr","technique":"Config file disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"data.csv.bat","technique":"Batch script disguised as data file","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"notes.txt.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"setup.exe:evil","technique":"Alternate data stream with malicious code","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"image.bmp.exe","technique":"Bitmap image with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"script.vbs.exe","technique":"VBScript disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"document.pdf.exe","technique":"PDF file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"archive.zip.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"video.avi.scr","technique":"AVI video disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"music.wav.bat","technique":"Batch script disguised as audio file","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"file.txt:evil.exe","technique":"Alternate data stream with executable payload","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"installer.exe.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+{"filename":"photo.gif.exe","technique":"GIF image with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"script.ps1.exe","technique":"PowerShell script disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"document.doc.exe","technique":"Word document with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"archive.7z.bat","technique":"Batch script disguised as archive","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"readme.md.exe","technique":"Markdown file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"config.xml.scr","technique":"XML config disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"data.json.bat","technique":"Batch script disguised as JSON data","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"notes.rtf.exe","technique":"RTF file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"setup.msi.scr","technique":"MSI installer disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"image.tiff.bat","technique":"Batch script disguised as TIFF image","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"file.log.exe","technique":"Log file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+{"filename":"script.sh.exe","technique":"Shell script disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+{"filename":"document.odt.bat","technique":"Batch script disguised as OpenDocument text","category":"Evasion","detected_by":"Behavioral analysis"}
+{"filename":"invoice.pdf.exe","technique":"Double extension disguise","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"report.docx.scr","technique":"Script disguised as document","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"update.jpg.pif","technique":"Image file with executable extension","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"setup.tar.gz.exe","technique":"Compressed archive with executable suffix","category":"Evasion","detected_by":"Sandboxing"}
+  {"filename":"readme.txt.{9006}","technique":"Alternate data stream hiding","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"backup.zip.exe","technique":"Archive with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"photo.png.exe","technique":"Image file masquerading","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.pdf.{hidden}","technique":"Hidden file extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"install.exe:Zone.Identifier","technique":"Zone identifier ADS to bypass security","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"script.js.exe","technique":"JavaScript file disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"archive.rar.{0000}","technique":"Alternate data stream with null byte","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"music.mp3.exe","technique":"Audio file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"video.mp4.scr","technique":"Video file disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"presentation.pptx.bat","technique":"Batch script disguised as presentation","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"document.docx.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"installer.msi.exe","technique":"Installer file with executable suffix","category":"Evasion","detected_by":"Sandboxing"}
+  {"filename":"photo.jpg:evil.txt","technique":"Alternate data stream with malicious payload","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"readme.txt.exe","technique":"Text file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"config.json.scr","technique":"Config file disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"data.csv.bat","technique":"Batch script disguised as data file","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"notes.txt.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"setup.exe:evil","technique":"Alternate data stream with malicious code","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"image.bmp.exe","technique":"Bitmap image with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"script.vbs.exe","technique":"VBScript disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.pdf.exe","technique":"PDF file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"archive.zip.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"video.avi.scr","technique":"AVI video disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"music.wav.bat","technique":"Batch script disguised as audio file","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"file.txt:evil.exe","technique":"Alternate data stream with executable payload","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"installer.exe.{hidden}","technique":"Hidden extension using NTFS streams","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"photo.gif.exe","technique":"GIF image with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"script.ps1.exe","technique":"PowerShell script disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.doc.exe","technique":"Word document with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"archive.7z.bat","technique":"Batch script disguised as archive","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"readme.md.exe","technique":"Markdown file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"config.xml.scr","technique":"XML config disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"data.json.bat","technique":"Batch script disguised as JSON data","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"notes.rtf.exe","technique":"RTF file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"setup.msi.scr","technique":"MSI installer disguised as script","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"image.tiff.bat","technique":"Batch script disguised as TIFF image","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"file.log.exe","technique":"Log file with executable extension","category":"Evasion","detected_by":"Signature-based detection"}
+  {"filename":"script.sh.exe","technique":"Shell script disguised as executable","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.odt.bat","technique":"Batch script disguised as OpenDocument text","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"archive.zip:encrypted","technique":"Encrypted alternate data stream","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"video.mp4:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"image.jpg:steg","technique":"Steganography in alternate data stream","category":"Evasion","detected_by":"Advanced forensic analysis"}
+  {"filename":"document.pdf:macro","technique":"Macro hidden in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"setup.exe:comspec","technique":"Command shell payload in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"readme.txt:evil","technique":"Malicious code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"config.ini:payload","technique":"Config file with hidden payload","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"script.js:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"data.csv:malware","technique":"Malware hidden in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"notes.txt:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"installer.msi:payload","technique":"Installer with hidden payload","category":"Evasion","detected_by":"Sandboxing"}
+  {"filename":"photo.png:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"video.avi:trojan","technique":"Trojan in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"music.mp3:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"archive.rar:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"},
+  {"filename":"document.docx:macro","technique":"Macro hidden in ADS","category":"Evasion","detected_by":"Behavioral analysis"},
+  {"filename":"script.ps1:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"File system monitoring"},
+  {"filename":"file.exe:poly.bat","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"setup.exe:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"readme.md:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"config.xml:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"data.json:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"notes.rtf:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"setup.msi:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"image.tiff:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"file.log:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"script.sh:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"document.odt:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"archive.zip:poly.bat","technique":"Polymorphic extension cycling","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"video.mp4:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"image.jpg:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.pdf:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"setup.exe:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"readme.txt:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"config.ini:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"script.js:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"data.csv:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"notes.txt:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"installer.msi:exploit","technique":"Exploit code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"photo.png:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"video.avi:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"File system monitoring"}
+  {"filename":"music.mp3:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"archive.rar:trojan","technique":"Trojan code in ADS","category":"Evasion","detected_by":"Heuristic analysis"}
+  {"filename":"document.docx:payload","technique":"Payload hidden in ADS","category":"Evasion","detected_by":"Behavioral analysis"}
+  {"filename":"script.ps1:encrypted","technique":"Encrypted payload in ADS","category":"Evasion","detected_by":"File system monitoring"}
