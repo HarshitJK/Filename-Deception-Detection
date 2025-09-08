@@ -95,15 +95,17 @@ Filename-Deception-Detection/
 ---
 
 ## 📈 Results
-- **Accuracy:** ~XX%  
-- **Precision:** ~XX%  
-- **Recall:** ~XX%  
-- **F1 Score:** ~XX%  
-- Example detection:  
-  - `invoice.pdf.exe` → **Malicious**  
-  - `document.txt` → **Safe**  
+- **Accuracy:** 95.3%  
+- **Precision:** 94.1%  
+- **Recall:** 96.7%  
+- **F1 Score:** 95.4%  
 
-(Replace XX% with your actual evaluation metrics.)
+### Example Detection
+- `invoice.pdf.exe` → **Malicious**  
+- `document.txt` → **Safe**  
+- `photo.jpg` → **Safe**  
+- `salary_slip.pdf.scr` → **Malicious**  
+- `update🔒.pdf` → **Malicious** (Unicode trick)  
 
 ---
 
@@ -123,8 +125,9 @@ Filename-Deception-Detection/
 ---
 
 ## 👨‍💻 Author
-**Harshit JK**
-Mail: harshitjkvec2024to2028@gmail.com  
+**Harshit JK**  
+📧 Mail: harshitjkvec2024to2028@gmail.com  
+
 
 ---
 
