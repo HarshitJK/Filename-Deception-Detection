@@ -1,0 +1,44 @@
+# ---- Python / Backend ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.db
+*.sqlite3
+instance/
+.env
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints
+
+# ---- Node / Frontend ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# ---- React Build ----
+/frontend/build
+/frontend/.cache
+/frontend/.next
+/frontend/out
+
+# ---- System files ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
