@@ -18,9 +18,6 @@ This project applies **Data Science + Machine Learning** to detect suspicious fi
 Filename-Deception-Detection/
 │── backend/        # Python backend (Flask / FastAPI) with ML model
 │── frontend/       # React frontend for user interaction
-│── data/           # Dataset (e.g., Malicious_file_trick_detection.jsonl)
-│── models/         # Trained ML models (if saved)
-│── docs/           # Reports, PDF, PPTX
 │── README.md       # Project documentation
 │── .gitignore      # Ignore unnecessary files
 ```
@@ -49,7 +46,6 @@ Filename-Deception-Detection/
    ```bash
    python app.py
    ```
-   Backend runs at **http://localhost:5000**
 
 ---
 
@@ -66,7 +62,6 @@ Filename-Deception-Detection/
    ```bash
    npm start
    ```
-   Frontend runs at **http://localhost:3000**
 
 ---
 
