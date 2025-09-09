@@ -5,7 +5,7 @@ import re
 app = Flask(__name__)
 CORS(app)  # allow frontend (React) to talk to backend
 
-# --- Detection Logic ---
+
 dangerous_exts = ["exe","js","vbs","scr","bat","cmd","jar","ps1","apk","msi","lnk","iso","hta","wsf","dll"]
 safe_mask_exts = ["pdf","doc","docx","xls","xlsx","ppt","pptx","txt","jpg","jpeg","png","gif","zip","rar","7z"]
 
@@ -40,7 +40,7 @@ def score_filename(name):
 # --- Routes ---
 @app.route("/", methods=["GET"])
 def home():
-    return "✅ Flask backend is running! Use POST /analyze to check files."
+    return " Flask backend is running! Use POST /analyze to check files."
 
 @app.route("/analyze", methods=["POST"])
 def analyze():

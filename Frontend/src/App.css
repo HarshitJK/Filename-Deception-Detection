@@ -1,4 +1,4 @@
-/* Global styles */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
+
 .container {
   margin-top: 50px;
   max-width: 700px;
@@ -23,14 +23,14 @@ body {
   animation: fadeIn 0.8s ease;
 }
 
-/* Title */
+
 h1 {
   color: #0077cc;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-/* File input */
+
 input[type="file"] {
   margin: 20px 0;
   padding: 8px;
@@ -39,7 +39,7 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* Button */
+
 button {
   margin-top: 10px;
   padding: 12px 24px;
@@ -58,7 +58,7 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Result card */
+
 .result {
   margin-top: 25px;
   padding: 20px;
@@ -74,13 +74,13 @@ button:hover {
   word-break: break-all;
 }
 
-/* Risk levels */
+
 .result.low { background: #e6ffed; color: #2e7d32; border-left: 6px solid #2e7d32; }
 .result.medium { background: #fff8e1; color: #856404; border-left: 6px solid #fbc02d; }
 .result.high { background: #fdecea; color: #b71c1c; border-left: 6px solid #d32f2f; }
 .result.error { background: #ffe6e6; color: #b71c1c; border-left: 6px solid #b71c1c; }
 
-/* List styling */
+
 .result ul {
   list-style: none;
   padding: 0;
@@ -93,7 +93,7 @@ button:hover {
   font-weight: normal;
 }
 
-/* Custom file upload button */
+
 .custom-file-upload {
   display: inline-block;
   padding: 10px 20px;
@@ -112,7 +112,7 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Selected file name */
+
 .file-name {
   display: block;
   margin-top: 12px;
@@ -121,11 +121,11 @@ button:hover {
   color: #444;
 }
 
-/* Group buttons side by side */
+
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 16px;              /* space between buttons */
+  gap: 16px;             
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -133,7 +133,7 @@ button:hover {
 .custom-file-upload,
 button {
   flex: 1;
-  max-width: 200px;       /* equal width */
+  max-width: 200px;       
   text-align: center;
   padding: 12px 20px;
   border-radius: 8px;
@@ -141,7 +141,7 @@ button {
 }
 
 .footer {
-  position: fixed;        /* stick to screen */
+  position: fixed;        
   bottom: 10px;
   right: 15px;
   font-size: 0.85rem;
