@@ -80,12 +80,12 @@ Filename-Deception-Detection/
 ---
 
 ## 📊 Features
-- ✅ Detects **double extensions** and suspicious sequences  
-- ✅ Identifies **Unicode homoglyphs & invisible characters**  
-- ✅ Flags **random/obfuscated names** using character n-grams  
-- ✅ Machine Learning models: Logistic Regression, Decision Tree, Random Forest  
-- ✅ Explainability with **SHAP** (why a filename was flagged)  
-- ✅ Web interface for testing filenames interactively  
+-  Detects **double extensions** and suspicious sequences  
+-  Identifies **Unicode homoglyphs & invisible characters**  
+-  Flags **random/obfuscated names** using character n-grams  
+-  Machine Learning models: Logistic Regression, Decision Tree, Random Forest  
+-  Explainability with **SHAP** (why a filename was flagged)  
+-  Web interface for testing filenames interactively  
 
 ---
 
