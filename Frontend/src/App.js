@@ -1,74 +1,110 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [history, setHistory] = useState([]);
+
+  useEffect(() => {
+    fetchHistory();
+  }, []);
+
+  const fetchHistory = async () => {
+    const res = await fetch("http://localhost:5000/files");
+    const data = await res.json();
+    setHistory(data);
+  };
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
 
-  const handleUpload = async () => {
+  const handleSubmit = async () => {
     if (!file) return;
+    setLoading(true);
 
     const formData = new FormData();
     formData.append("file", file);
 
-    try {
-      const res = await fetch("http://127.0.0.1:5000/analyze", {
-        method: "POST",
-        body: formData,
-      });
+    const res = await fetch("http://localhost:5000/analyze", {
+      method: "POST",
+      body: formData,
+    });
 
-      const data = await res.json();
-      setResult(data);
-    } catch (error) {
-      console.error("Error:", error);
-      setResult({ error: "Could not connect to backend." });
-    }
+    const data = await res.json();
+    setResult(data);
+    setLoading(false);
+    fetchHistory(); // refresh history after new upload
   };
 
   return (
-    <div className="container">
-      <h1>FileShield – Filename Deception Detection</h1>
-      <footer className="footer">
-  © Harshit JK
-</footer>
+    <div className="app-container">
+      <h1 className="title">🛡️ Filename Deception Detector</h1>
+      <p className="subtitle">Upload a file and check if it’s safe</p>
 
-     
-    <div className="button-group">
-  <input
-    type="file"
-    id="fileInput"
-    onChange={handleFileChange}
-    style={{ display: "none" }}
-  />
-  <label htmlFor="fileInput" className="custom-file-upload">
-    📂 Choose File
-  </label>
+      <div className="upload-box">
+        <input type="file" onChange={handleFileChange} />
+        <button className="btn" onClick={handleSubmit} disabled={loading}>
+          {loading ? "Analyzing..." : "Analyze File"}
+        </button>
+      </div>
 
-  <button onClick={handleUpload}>Analyze File</button>
-</div>
-
-{file && <span className="file-name">{file.name}</span>}
-
-      {result && !result.error && (
-        <div className={`result ${result.risk.toLowerCase()}`}>
-          <h3>{result.filename}</h3>
-          <p><b>Risk Level:</b> {result.risk}</p>
-          <p><b>Score:</b> {result.score}</p>
-          <ul>
-            {result.reasons.map((r, i) => (
-              <li key={i}>• {r}</li>
-            ))}
-          </ul>
+      {result && (
+        <div className="result-card">
+          <h2>📊 Latest Analysis</h2>
+          <table>
+            <tbody>
+              <tr><td>📄 Filename</td><td>{result.filename}</td></tr>
+              <tr><td>🔍 Prediction</td><td className={`badge ${result.prediction}`}>{result.prediction}</td></tr>
+              <tr><td>📈 Confidence</td><td>{(result.confidence * 100).toFixed(2)}%</td></tr>
+              <tr><td>⚠️ Risk</td><td className={`badge ${result.risk.toLowerCase()}`}>{result.risk}</td></tr>
+              <tr><td>🎭 Tricks</td><td>{result.detected_tricks}</td></tr>
+              <tr><td>📂 Extension</td><td>{result.extension_category}</td></tr>
+              <tr><td>🔢 Length</td><td>{result.filename_length}</td></tr>
+              <tr><td>⏰ Checked At</td><td>{new Date(result.created_at).toLocaleString()}</td></tr>
+            </tbody>
+          </table>
         </div>
       )}
 
-      {result && result.error && (
-        <div className="result error">{result.error}</div>
-      )}
+      <div className="history-card">
+  <h2>📜 History of Scanned Files</h2>
+  <button
+    className="btn download-btn"
+    onClick={() => (window.location.href = "http://localhost:5000/download-db")}
+  >
+    ⬇️ Download Database
+  </button>
+  <table className="history-table">
+    <thead>
+      <tr>
+        <th>Filename</th>
+        <th>Prediction</th>
+        <th>Risk</th>
+        <th>Confidence</th>
+        <th>Tricks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {history.map((file) => (
+        <tr key={file.id}>
+          <td>{file.filename}</td>
+          <td className={`text-${file.prediction.toLowerCase()}`}>
+            {file.prediction}
+          </td>
+          <td className={`text-${file.risk.toLowerCase()}`}>
+            {file.risk}
+          </td>
+          <td>{(file.confidence * 100).toFixed(1)}%</td>
+          <td>{file.detected_tricks}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
     </div>
   );
 }

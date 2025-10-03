@@ -1,46 +1,88 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import re
+from flask_sqlalchemy import SQLAlchemy
+import joblib, os, datetime, re
+from flask import send_file
 
 app = Flask(__name__)
-CORS(app)  # allow frontend (React) to talk to backend
+CORS(app)
 
+# ------------------ Database Config ------------------
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+DB_PATH = os.path.join(BASE_DIR, "checked_files.db")
+app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_PATH}"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db = SQLAlchemy(app)
 
-dangerous_exts = ["exe","js","vbs","scr","bat","cmd","jar","ps1","apk","msi","lnk","iso","hta","wsf","dll"]
-safe_mask_exts = ["pdf","doc","docx","xls","xlsx","ppt","pptx","txt","jpg","jpeg","png","gif","zip","rar","7z"]
+# ------------------ Database Model ------------------
+class CheckedFile(db.Model):
+    __tablename__ = "checked_files"
+    id = db.Column(db.Integer, primary_key=True)
+    filename = db.Column(db.String(512), nullable=False)
+    prediction = db.Column(db.String(50), nullable=False)
+    confidence = db.Column(db.Float, nullable=False)
+    risk = db.Column(db.String(50), nullable=False)
+    detected_tricks = db.Column(db.String(200), nullable=True)
+    extension_category = db.Column(db.String(50), nullable=True)
+    filename_length = db.Column(db.Integer, nullable=True)
+    created_at = db.Column(db.DateTime, default=datetime.datetime.utcnow)
 
-def get_ext(name):
-    parts = name.split(".")
-    return parts[-1].lower() if len(parts) > 1 else ""
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "filename": self.filename,
+            "prediction": self.prediction,
+            "confidence": self.confidence,
+            "risk": self.risk,
+            "detected_tricks": self.detected_tricks,
+            "extension_category": self.extension_category,
+            "filename_length": self.filename_length,
+            "created_at": self.created_at.isoformat()
+        }
 
-def has_double_extension(name):
-    return bool(re.search(rf"\.({'|'.join(safe_mask_exts)})\s*\.+\s*({'|'.join(dangerous_exts)})$", name.lower()))
+# ------------------ Load Model ------------------
+model = joblib.load("filename_model.pkl")
+vectorizer = joblib.load("filename_vectorizer.pkl")
 
-def has_rlo(name):
-    return "\u202e" in name
+# ------------------ Risk level function ------------------
+def get_risk(prediction, confidence):
+    if prediction == "malicious":
+        if confidence >= 0.75:
+            return "High"
+        if confidence >= 0.5:
+            return "Medium"
+        return "Low"
+    return "Low"
 
-def has_long_whitespace(name):
-    return bool(re.search(rf"\s{{6,}}\.+\s*({'|'.join(dangerous_exts)})$", name.lower()))
+# ------------------ Helper functions ------------------
+def detect_tricks(filename: str) -> str:
+    tricks = []
+    if len(filename.split(".")) > 2:
+        tricks.append("double_extension")
+    if any(ord(c) > 127 for c in filename):
+        tricks.append("unicode_or_invisible")
+    if re.search(r"[0-9]{4,}", filename) or re.search(r"[A-Z]{4,}", filename):
+        tricks.append("random_string")
+    return ",".join(tricks) if tricks else "none"
 
-def is_dangerous_ext(name):
-    return get_ext(name) in dangerous_exts
+def categorize_extension(filename: str) -> str:
+    ext = filename.split(".")[-1].lower()
+    dangerous_ext = {"exe", "scr", "bat", "js", "vbs"}
+    document_ext = {"pdf", "doc", "docx", "txt", "xls", "xlsx"}
+    compressed_ext = {"zip", "rar", "7z", "tar", "gz"}
+    if ext in dangerous_ext:
+        return "dangerous"
+    elif ext in document_ext:
+        return "document"
+    elif ext in compressed_ext:
+        return "compressed"
+    else:
+        return "other"
 
-def score_filename(name):
-    score, reasons = 0, []
-    if is_dangerous_ext(name):
-        score += 30; reasons.append("Dangerous extension")
-    if has_double_extension(name):
-        score += 25; reasons.append("Double extension trick")
-    if has_rlo(name):
-        score += 20; reasons.append("RLO (Right-to-Left override)")
-    if has_long_whitespace(name):
-        score += 10; reasons.append("Whitespace padding")
-    return score, reasons
-
-# --- Routes ---
+# ------------------ Routes ------------------
 @app.route("/", methods=["GET"])
 def home():
-    return " Flask backend is running! Use POST /analyze to check files."
+    return "Flask ML backend with DB is running!"
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
@@ -49,20 +91,44 @@ def analyze():
     f = request.files["file"]
     filename = f.filename
 
-    score, reasons = score_filename(filename)
-    if score >= 50:
-        risk = "High"
-    elif score >= 25:
-        risk = "Medium"
-    else:
-        risk = "Low"
+    # ML prediction
+    X = vectorizer.transform([filename])
+    prediction = model.predict(X)[0]
+    confidence = float(model.predict_proba(X).max())
+    risk = get_risk(prediction, confidence)
 
-    return jsonify({
-        "filename": filename,
-        "score": score,
-        "risk": risk,
-        "reasons": reasons
-    })
+    # Extract behavior data
+    tricks = detect_tricks(filename)
+    ext_category = categorize_extension(filename)
+    name_length = len(filename)
 
+    # Save to DB
+    record = CheckedFile(
+        filename=filename,
+        prediction=prediction,
+        confidence=confidence,
+        risk=risk,
+        detected_tricks=tricks,
+        extension_category=ext_category,
+        filename_length=name_length
+    )
+    db.session.add(record)
+    db.session.commit()
+
+    return jsonify(record.to_dict())
+
+@app.route("/download-db", methods=["GET"])
+def download_db():
+    return send_file(DB_PATH, as_attachment=True)
+
+
+@app.route("/files", methods=["GET"])
+def list_files():
+    files = CheckedFile.query.order_by(CheckedFile.created_at.desc()).all()
+    return jsonify([f.to_dict() for f in files])
+
+# ------------------ Main ------------------
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
     app.run(debug=True)
