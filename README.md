@@ -80,10 +80,10 @@ Filename-Deception-Detection/
 ## 🖼️ Screenshots  
 
 ### 🔹 Dashboard – File Upload & Scan  
-![UI Dashboard](Docs/Screenshots/ui_dashboard.png)  
+![UI Dashboard](ui_dashboard.png)  
 
 ### 🔹 History of Scanned Files  
-![Scan History](Docs/Screenshots/scan_history.png)  
+![Scan History](scan_history.png)  
 
 ---
 
