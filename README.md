@@ -1,75 +1,120 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 📘 Filename Deception Detection with Data Science  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🔒 Project Overview  
+Phishing and malware campaigns often exploit **filename deception** to trick users into opening harmful files. Attackers use tricks like double extensions (`invoice.pdf.exe`), Unicode homoglyphs, invisible characters, and obfuscated names to disguise malicious files as safe.  
 
-## Available Scripts
+This project leverages **data science and machine learning** to automatically detect and flag suspicious filenames before they can harm users. A clean **web-based interface** is provided to scan, analyze, and review filename risks.  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features  
+✅ Detects **filename deception tricks**:  
+- Double extensions  
+- Unicode homoglyphs / invisible characters  
+- Random / obfuscated strings  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ **Machine Learning–based classification** (Benign / Malicious / Medium risk)  
+✅ **Confidence score** for each prediction  
+✅ **Web dashboard** to upload and review scanned files  
+✅ **Database download** of scan history  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack  
+- **Frontend**: React.js, TailwindCSS  
+- **Backend**: Flask (Python)  
+- **Database**: SQLite  
+- **ML / Data Science**: Pandas, NumPy, Scikit-learn, SHAP  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Repository Structure  
+```
+Filename-Deception-Detection/
+├── Backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── checked_files.db
+├── Frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+├── Data/
+│   └── Malicious_file_trick_detection.jsonl
+├── Docs/
+│   ├── Project_Report.pdf
+│   ├── Project_Presentation.pptx
+│   └── Screenshots/
+│       ├── ui_dashboard.png
+│       ├── scan_history.png
+├── README.md
+└── .gitignore
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📊 Dataset  
+- Used the **Malicious File Trick Detection Dataset** and manually created sample files for training/testing.  
+- Examples:  
+  - Benign → `document.txt`, `budget.xlsx`  
+  - Malicious → `resume.docx.scr`, `vpn_setup.exe.txt`  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔎 Data Science Process  
+1. **Exploratory Data Analysis (EDA)** → Identify patterns like extra dots, Unicode anomalies, suspicious extensions.  
+2. **Feature Engineering** → Character n-grams, number of special characters, double-extension flags.  
+3. **Model Training** → Logistic Regression, Decision Trees, Random Forests.  
+4. **Evaluation** → Accuracy, Precision, Recall, F1-score.  
+5. **Explainability** → Used SHAP to highlight why a filename was flagged.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📈 Results  
+- High accuracy in detecting malicious filenames.  
+- Low false negatives (priority to block risky files).  
+- Visualization of common tricks (double extensions were most frequent).  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🖼️ Screenshots  
 
-## Learn More
+### 🔹 Dashboard – File Upload & Scan  
+![UI Dashboard](Docs/Screenshots/ui_dashboard.png)  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔹 History of Scanned Files  
+![Scan History](Docs/Screenshots/scan_history.png)  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ How to Run  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔧 Backend (Flask API)  
+```bash
+cd Backend
+pip install -r requirements.txt
+python app.py
+```
 
-### Analyzing the Bundle Size
+### 💻 Frontend (React)  
+```bash
+cd Frontend
+npm install
+npm start
+``` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📌 Future Work  
+- Extend detection to **file content analysis** (not just filename).  
+- Integrate with **email scanning systems** to block phishing attachments.  
+- Deploy as a **browser extension / cloud API**.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## ✨ Contributors  
+- **Harshit JK**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Filename-Deception-Detection
-Detecting phishing filename tricks using Data Science &amp; ML
->>>>>>> 03edf1f9627bd8a34efae1142150cbef6147e9a0
+👉 [**View Project Repository**](https://github.com/HarshitJK/Filename-Deception-Detection)  
